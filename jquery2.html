@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+	<style>
+	body {
+		height: 2000px;
+	}
+	ul {
+		margin-left: 50px;
+		font-size: 80px;
+		overflow: scroll;
+	}
+	.col-lg-6 {
+		height 200px;
+	}
+</style>
+</head>
+<body>
+	<div class="container-fluid">
+  		<div class="row">
+    		<div class="col-lg-6" style="background-color:lightpurple;">one</div>
+    		<div class="col-lg-6" style="background-color:lightred;">two</div>
+    		<div class="col-lg-6" style="background-color:lightgreen;">three</div>
+    		<div class="col-lg-6" style="background-color:lightblue;">four</div>
+ 		</div>
+	</div>
+<!-- 	<ul>
+		<li>one</li>
+		<li id="two">two</li>
+		<li>three</li>
+		<li>four</li>
+		<li class="five">five</li>
+	</ul> -->
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae laborum dolore numquam, repudiandae harum odio, aut ullam molestias quia dolorem eveniet hic possimus ea reprehenderit natus laboriosam obcaecati officia expedita.</p>
+	<!-- script always above the closing body tag -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script>
+
+	$(document).ready(function(){
+
+		// here we have assigned three html items with jquery
+		// the 3 items are in the dom above
+		// we then use vanilla javascript to assign the items via jquery
+		// to a normal javascript variabe - 'grabStuff
+		// var grabStuff = $('#two, .five, p');
+		// console.log(grabStuff);
+		// to do something else after the hide process
+
+		// $('#two').hide(4000, function (){
+		// 	$('#two').show(4000);
+		// });
+
+		// chaining
+		// $('#two').hide(1000).show(1000);
+
+		// $('li').hover(function() {
+		// 	console.log('a');
+		// 	// do stuff here:
+		// 	$(this).hide(1000, function(){
+		// 		console.log('b');
+		// 	})
+			
+		// 		.show(1000)
+		// 		.hide(1000)
+		// 		.show(1000)
+		// 		.fadeIn(5000)
+		// 		.fadeOut(10000);
+		// });
+
+		// $(window).scroll(function() {
+		// 	$('ul').hide(1000)
+		// 		.show(1000)
+		// 		.hide(1000)
+		// 		.show(1000)
+		// 		.fadeIn(5000)
+		// 		.fadeOut(10000);
+		// });
+
+
+	});
+
+	</script>
+
+
+
+</body>
+</html>

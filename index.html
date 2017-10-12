@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery intro</title>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<style>
+		body {
+			/*max-width: 1024px;*/
+		}
+		/** { outline: 2px solid black }*/
+
+		.row > div {
+			height: 400px;
+			display: block;
+			text-align: center;
+			color: white;
+			font-size: 30px;
+		}
+
+		.row {
+			margin: 20px;
+		}
+	</style>
+</head>
+<body>
+<!-- 	<h1 class="my-title"> hello world </h1>
+	<button>Click me</button> -->
+
+	<div class="row">
+		  <div class="col-sm-6" style="background-color:#2c3e50;">one</div>
+		  <div class="col-sm-6" style="background-color:#2C5A50;">two</div>
+		  <div class="col-sm-6" style="background-color:#2C5A9F;">three</div>
+		  <div class="col-sm-6" style="background-color:#2C5AFF;">four</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+	<script>
+	// this is saying that the document is ready
+	// go do line 16
+	$(document).ready(function(){
+
+		//used h1 as a selector
+		// $('.my-title').hide(2000);
+		// $('button').click(function(){
+		// 	$('.my-title').hide();
+		// });
+			$(".col-sm-6").hover(function(){
+		    $(this).css("background-color", "#7f8c8d");
+		});
+
+			$(".col-sm-6").on({mouseleave: function(){
+        	$(this).css("background-color", "#e67e22");
+    		}
+    	});
+	});
+	</script>
+
+</body>
+</html>
