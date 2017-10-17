@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>function</title>
+</head>
+<body>
+
+<script>
+	// A. Write the function
+	// this is a function declaration
+	function myFunction () {
+		// this is the action/code block
+		var obj = {name: 'Cam'};
+		obj.age = 86;
+		delete obj.age;
+		console.log(obj);
+	}
+
+	// this is a function expression
+	var myFunctionB = function(parameterA, parameterB){
+		// action station
+	console.log(parameterA + parameterB);
+
+	}
+
+
+
+	// this is me invoking a function
+	myFunction();
+	myFunctionB('Hi ', 'how are you');
+</script>
+
+</body>
+</html>
