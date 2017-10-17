@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>javascript practice</title>
+</head>
+<body>
+	
+
+	<p id="cost"> </p>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+	<script>
+		// create three variables to store information
+		var price;
+		var quantity;
+		var total;
+
+		// assign values
+		price = 5;
+		quantity= 14;
+
+		console.log(typeof price);
+
+
+
+		//calculate the total by multipling the price by quantity 
+		total = price * quantity
+
+		console.log(total);
+
+		
+
+		// get the element with an id of cost
+		// vanilla javscript is different to jQuery with selectors
+		var el = document.getElementById('cost');
+		el.textContent = '$' + total;
+
+	</script>
+</body>
+</html>
