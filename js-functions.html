@@ -5,7 +5,7 @@
 	<title>function</title>
 </head>
 <body>
-
+<h1> functions </h1>
 <script>
 	// A. Write the function
 	// this is a function declaration
@@ -19,16 +19,57 @@
 
 	// this is a function expression
 	var myFunctionB = function(parameterA, parameterB){
-		// action station
+	// action station
 	console.log(parameterA + parameterB);
-
 	}
 
 
+	var myFunctionAdding = function(a, b){
+	// action station
+	console.log('a');
+	return a + b;
+	}
 
+	//make sure you invoke the function
+	// this is me invoking the function
+	// function ();
 	// this is me invoking a function
+	console.log(myFunctionAdding(5,5));
 	myFunction();
 	myFunctionB('Hi ', 'how are you');
+
+
+
+
+	var obj = {
+		val1: 22,
+		val2: 55,
+		val3: 78,
+		val4: 12,
+		val5: 4
+	};
+	// this is a function expression
+	// it calculates the area by multiplying the 
+	// 2 paramters width and height
+	function calculateArea(width, height) {
+		// the variable area holds the value
+		// of multiplying the 2 parameters
+		var area = width * height;
+		// the function then returns area - 'the value
+		//of multiplication'
+		return area;
+	}
+
+
+	// we make a varable and it references the function invokation
+	// the function 
+
+	// wallOne represents an invokation
+	var wallOne = calculateArea(obj.val1, obj.val5);
+	// var wallTwo = calculateArea(8,5);
+
+	console.log(wallOne);
+
 </script>
 
 </body>

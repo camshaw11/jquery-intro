@@ -41,15 +41,23 @@
 	// go do line 16
 	$(document).ready(function(){
 
-				//used h1 as a selector
-				// $('.my-title').hide(2000);
-				// $('button').click(function(){
-				// 	$('.my-title').hide();
-				// });$(document).ready(function(){
-				
+		function myFunction(){
+
+	
 			    $(".col-sm-6").click(function(){
 			    $(".col-sm-6").slideUp(2000).slideDown(2000);
-		});
+				});
+
+			    return Math.PI;
+			}	
+				console.log(myFunction);
+				console.log(Math.PI);
+
+
+
+
+
+
 
 				$(".col-sm-6").hover(function(){
 			    $(this).css("background-color", "#7f8c8d");
