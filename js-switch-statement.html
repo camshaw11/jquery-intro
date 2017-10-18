@@ -30,25 +30,57 @@
 
 
 
-	var text;
-	// a switch statement
-	switch (new Date().getDay()) {
-		case 6:
-			text = "Today is Saturday";
-			break;
-		case 0:
-			text = "Today is Sunday";
-			break;
-		default:
-			text = "Looking forward to the weekend";
-	}
+	// var text;
+	// // a switch statement
+	// switch (new Date().getDay()) {
+	// 	case 6:
+	// 		text = "Today is Saturday";
+	// 		break;
+	// 	case 0:
+	// 		text = "Today is Sunday";
+	// 		break;
+	// 	default:
+	// 		text = "Looking forward to the weekend";
+	// }
 
-		console.log(new Date());
-		console.log(new Date().getDay());
+	// 	console.log(new Date());
+	// 	console.log(new Date().getDay());
 
-		document.getElementById("demo").innerHTML = text;
+	// 	document.getElementById("demo").innerHTML = text;
 
 
+
+		var number = 45;
+
+		switch (true) {
+		    // If number is 100 or greater
+		    case number >= 100:
+		        console.log("100+");
+		        break;
+		    // If number is 80 or greater
+		    case number >= 80:
+		        console.log("80-99");
+		        break;
+	
+		    case number >= 60:
+		        console.log("60-79");
+		        break;
+		   
+		    case number >= 40:
+		        console.log("40-59");
+		        break;
+
+		    case number >= 20:
+		    	console.log("20-39");
+		    	break;
+
+		    case number >= 0:
+		    	console.log("0-19");
+		    	break;
+		    
+		    default:
+		        console.log("magic");
+		}
 
 
 
