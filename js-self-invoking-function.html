@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>self invoking function</title>
+</head>
+<body>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script>
+	// functions act as a house or private
+	// environment for variables
+
+	// this variable exists in the global scope
+	var isGlobal = 'Im global you can access me from anywhere';
+
+	// function declaration
+	function coverMe(){
+		console.log(ab)
+		var private = 'Im private';
+	};
+
+
+	(function(){
+		var private = 'im private';
+		alert('eh!');
+	})();
+
+	// function expression 
+	var anotherFunctionPattern = function(){
+		console.log('Im working');
+	}();
+
+	</script>
+</body>
+</html>

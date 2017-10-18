@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>checkpoint exercise</title>
+</head>
+<body>
+	<script>
+	// here is the iffe
+	(function(){
+
+		console.log('a');
+
+		function myFunction() {
+			var configObj = {
+				option1: 123,
+				option2: 456,
+			};
+
+			function deepFunc() {
+			alert('doof doof!');	
+			};
+			
+			console.log(deepFunc());
+			console.log('b');
+			//do stuff
+			return configObj.option1;
+
+		}
+
+			function deepHardFunc() {
+			alert('doof');	
+			};
+
+			console.log(deepHardFunc());
+			console.log(myFunction());
+			
+			
+		})();
+
+
+
+		(function(){
+
+		// you can invoke a function expression from above or below in the script/code
+		// *** see b
+
+		declarationA();
+
+		function declarationA(){
+			alert('Hoisted');
+		}
+		// ** b
+		declarationA();
+		
+		// Expressions must be invoked after the function is written - ***B
+		// **A will not work
+		
+		var expressionA = function(){
+			// you cant
+			alert('Hoisted EX');
+		}
+
+		// **B
+		expressionA();
+
+		})();
+
+
+	</script>
+	
+</body>
+</html>
