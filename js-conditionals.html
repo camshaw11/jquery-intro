@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>conditional</title>
+</head>
+<style>
+	h2 {
+		text-align: center;
+		margin-top: 60px;
+		font-size: 40px;
+		color: green;
+		font-family: sans-serif;
+	}
+	h1 {
+		text-align: center;
+		margin-top: 70px;
+		font-size: 40px;
+		color: black;
+		font-family: sans-serif;
+	}
+
+	#box {
+		width: 100%;
+		height: 400px;
+		background-color: black;
+	}
+
+	#inputField {
+		text-align: center;
+		margin-left: 0%;
+	}
+
+</style>
+<body>
+	<div>
+		<h1> Can you drink? </div><hr></br>
+	</div>
+
+	<div id="inputField">
+	<input id="myInput" type="text">
+	<button onclick="myFunction()"> enter </button>
+	</div>
+
+	<div>
+		<h2 id="answer"></h2>
+	</div>
+
+	<div id="box"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script> 
+
+	function myFunction(){
+
+		// var age = 1;   
+		var msg;
+		// get the text input value
+		var age = document.getElementById("myInput").value;
+
+		console.log(age);
+		// if the input age is greater than 18 and less than 90 exexute message
+		if ((age >= 18) && (age <= 90)) {
+		 	// if true execute 
+			msg = 'Congratulations! You can drink';
+			// print message
+			var el = document.getElementById('answer');
+			el.textContent = msg;
+			// colour text green
+			var el = document.getElementById('answer').style.color='green';
+			// colour box green
+			var el = document.getElementById('box').style.backgroundColor='green';
+		}
+
+		else {
+			// do this
+			msg = 'Not old enough!'
+			// print message
+			var el = document.getElementById('answer');
+			el.textContent = msg;
+			// colour text red
+			var el = document.getElementById('answer').style.color='red';
+			// colour box red
+			var el = document.getElementById('box').style.backgroundColor='red';
+		}
+
+	}
+
+	</script>
+</body>
+</html>
