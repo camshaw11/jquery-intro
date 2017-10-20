@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Template</title>
+<!-- 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+</head>
+<body>
+	<h1 style="padding-left: 1em;">A List</h1>
+	<p id="para"></p>
+	<ul id="bigList">
+		<li class="red">red</li>
+		<li id="another">another</li>
+		<li class="hot">hot</li>
+		<li class="blue">blue</li>
+		<li class="green">green</li>
+		<li class="green">green</li>
+		<li id="new">new</li>
+		<li class="hot">hot number 2</li>
+	</ul>
+
+	<script>
+		// this is a dom query method
+		// var el = document.getElementById('another');
+		// var ulPls = document.getElementById('bigList');
+		// console.log(el);
+		// console.dir(el);
+		// console.dir(typeof ulPls.children["0"]);
+
+		// var elements = document.getElementsByClassName('hot')
+		// // if elements.length // length = we have an array somewhere
+		// if (elements.length >= 1) {
+		// 	// create a variable and reference the array
+		// 	var firstItem = elements.item(0);
+		// }
+		// console.log(elements);
+
+
+		// var el = document.getElementById('another');
+		// console.dir(el);
+		// el.draggable = true;
+
+		// var el = document.querySelectorAll('li.green')
+
+
+
+
+	(function(){
+
+			function domQueryA(borderStyle){
+				// get elements with class name hot
+				var el = document.getElementsByClassName('hot')
+				// give class hot a border of black
+				[0].style.border = borderStyle;
+				// print in the directory
+				console.dir(el);
+
+			};
+
+			function domQueryB(bgColour){
+				// get element with id of another
+				var el = document.getElementById('another');
+				// style id with a background colour
+				el.style.backgroundColor= bgColour;
+
+				console.dir(el);
+			};
+
+
+			function domQueryC(){
+				// get element with selector of li green
+				var el = document.querySelectorAll('li.green')
+				// style second array item with a border
+				[1].style.border= '2px dotted black';
+
+				console.dir(el);
+			};
+
+			function domQueryD(){
+				// get element body
+				var el = document.querySelectorAll('body')
+				// style body with border
+				[0].style.border= '6px dotted black';
+
+				console.dir(el);
+			};
+
+			domQueryA('2px solid black');
+			domQueryB('lightblue');
+			domQueryC(0);
+			domQueryD(0);
+
+	})(); // iife end	
+
+	</script>
+</body>
+</html>
